@@ -1,0 +1,72 @@
+ namespace _Method { #include "ASWStandard\\TraceLevel\\TraceLevel.hsl" } 
+ namespace _Method { #include "HSLML_STARLib.hsl" } 
+#include "SampleNormalisation_CherryPicking.res"
+ namespace _Method { #include "Well_Format.hs_" } 
+ namespace _Method { #include "Unique_members.hs_" } 
+ namespace _Method { #include "WSI\\TraceArray\\TraceArray.hs_" } 
+ namespace _Method { #include "HSLStrLib.hsl" } 
+ namespace _Method { #include "opt_order.hs_" } 
+ namespace _Method { #include "HSLSeqLib.hsl" } 
+/* {{ 2 "LibraryInsertLine" "" */ // }} ""
+global device ML_STAR ("SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
+variable strWorklistFilePath;
+variable blnSimulationMode;
+variable intNumberOfSourceBarcodes;
+variable intNumberOfDestinationBarcodes;
+/* {{ 2 "VariableInsertLine" "" */ // }} ""
+// {{ 2 "TemplateIncludeBlock" ""
+ namespace _Method { #include "HSLMETEDLib.hs_" } 
+ namespace _Method { #include "HSLMECCLib.hs_" } 
+ namespace _Method { #include "HSLPTLLib.hsl" } 
+ namespace _Method { #include "HSLSTCCLib.hs_" } 
+// }} ""
+// {{{ 2 "LocalSubmethodInclude" ""
+ namespace _Method {  #include __filename__ ".sub"  } 
+// }} ""
+/* {{ 2 "ProcessInsertLine" "" */ // }} ""
+// {{{ 5 "main" "Begin"
+namespace _Method { method main(  ) void {
+// }} ""
+// {{ 5 "main" "InitLocals"
+// }} ""
+// {{ 2 "AutoInitBlock" ""
+PTL::SetWashingStateDefault("RinseTime1", 5);
+PTL::SetWashingStateDefault("SoakTime1", 5);
+PTL::SetWashingStateDefault("FlowRate1", 11);
+PTL::SetWashingStateDefault("RinseTime2", 0);
+PTL::SetWashingStateDefault("SoakTime2", 0);
+PTL::SetWashingStateDefault("FlowRate2", 11);
+PTL::SetWashingStateDefault("DrainingTime", 10);
+PTL::SetWashingStateDefault("StartWashLiquid", 0);
+PTL::SetLoadingStateDefault("RecoveryOptionContinue", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionExclude", hslTrue);
+PTL::SetLoadingStateDefault("RecoveryOptionDefault", 0);
+PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
+WELL_FORMAT::_InitLibrary();
+UNIQUE_MEMBERS::_InitLibrary();
+TRACEARRAY::_InitLibrary();
+OPT_ORDER::_InitLibrary();
+::RegisterAbortHandler( "OnAbort");
+// }} ""
+// {{ 1 1 0 "a3ce99cc_4b71_490d_ae38779cdefd1a85" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+
+// }} ""
+// {{ 2 1 0 "187ddb87_6b52_4908_b7ddbe74f19e17af" "ML_STAR:{1C0C0CB0-7C87-11D3-AD83-0004ACB1DCB2}"
+{
+	variable arrRetValues[];
+	arrRetValues = ML_STAR._1C0C0CB0_7C87_11D3_AD83_0004ACB1DCB2("187ddb87_6b52_4908_b7ddbe74f19e17af"); // Initialize
+}
+// }} ""
+// {{{ 3 1 0 "6cf60d3f_2e60_4747_b902abee9d91067f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+blnSimulationMode = HSLML_STAR::IsSimulatorMode(ML_STAR);
+// }} ""
+// {{ 2 "AutoExitBlock" ""
+WELL_FORMAT::_ExitLibrary();
+UNIQUE_MEMBERS::_ExitLibrary();
+TRACEARRAY::_ExitLibrary();
+OPT_ORDER::_ExitLibrary();
+// }} ""
+// {{{ 5 "main" "End"
+} }
+// }} ""
+// $$author=ch33$$valid=0$$time=2025-11-21 08:51$$checksum=15a28337$$length=083$$
