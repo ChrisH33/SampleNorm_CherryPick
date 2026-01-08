@@ -1,18 +1,37 @@
  namespace _Method { #include "ASWStandard\\TraceLevel\\TraceLevel.hsl" } 
  namespace _Method { #include "HSLML_STARLib.hsl" } 
-#include "SampleNormalisation_CherryPicking.res"
  namespace _Method { #include "Well_Format.hs_" } 
  namespace _Method { #include "Unique_members.hs_" } 
  namespace _Method { #include "WSI\\TraceArray\\TraceArray.hs_" } 
  namespace _Method { #include "HSLStrLib.hsl" } 
- namespace _Method { #include "opt_order.hs_" } 
  namespace _Method { #include "HSLSeqLib.hsl" } 
+ namespace _Method { #include "lookup.hs_" } 
+ namespace _Method { #include "opt_order.hs_" } 
+ namespace _Method { #include "HSLUtilLib2.hsl" } 
+ namespace _Method { #include "HSLMthLib.hsl" } 
+#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
+ namespace _Method { #include "HSLDevLib.hsl" } 
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
-global device ML_STAR ("SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
+global device ML_STAR ("SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
 variable strWorklistFilePath;
 variable blnSimulationMode;
 variable intNumberOfSourceBarcodes;
 variable intNumberOfDestinationBarcodes;
+variable arrSourceBarcodes[];
+variable arrDestinationWells[];
+variable arrVolumes_Diluent[];
+variable arrVolumes_Sample[];
+variable arrSourceWells[];
+variable arrDestinationBarcodes[];
+variable arrDestinationLabwareIDs[];
+variable arrSourceLabwareIDs[];
+variable arrDestinationBarcodes_Unique[];
+variable arrSourceBarcodes_Unique[];
+sequence seqDestination_Sample;
+sequence seqDestination_Diluent;
+sequence seqSource_Sample;
+variable arrTransferVolumes_Diluent[];
+variable arrTransferVolumes_Sample[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
  namespace _Method { #include "HSLMETEDLib.hs_" } 
@@ -45,6 +64,7 @@ PTL::SetLoadingStateDefault("KitLotCheckEnabled", hslFalse);
 WELL_FORMAT::_InitLibrary();
 UNIQUE_MEMBERS::_InitLibrary();
 TRACEARRAY::_InitLibrary();
+LOOKUP::_InitLibrary();
 OPT_ORDER::_InitLibrary();
 ::RegisterAbortHandler( "OnAbort");
 // }} ""
@@ -60,13 +80,32 @@ OPT_ORDER::_InitLibrary();
 // {{{ 3 1 0 "6cf60d3f_2e60_4747_b902abee9d91067f" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
 blnSimulationMode = HSLML_STAR::IsSimulatorMode(ML_STAR);
 // }} ""
+// {{{ 4 1 0 "5374e999_3114_471c_ac7e45d794307431" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+TRACELEVEL::SetTraceLevel(TRACE_LEVEL_RELEASE);
+// }} ""
+// {{{ 5 1 0 "a311ec03_0c39_4769_bfe7486c156d5cc7" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+A_UserInput();
+// }} ""
+// {{{ 6 1 0 "4ace96ad_48f2_454f_9cc12be24a0560d1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+B_Arrays();
+// }} ""
+// {{{ 7 1 0 "3c52ec61_330f_4cd5_a8a4de80f7ea5533" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+C_LabwareGeneration();
+// }} ""
+// {{{ 8 1 0 "74b10bcb_135d_4dca_b750579df7f04e9b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+E_WorklistCrunching();
+// }} ""
+// {{{ 9 1 0 "008a3c52_149a_45fb_aa73ff252692a04b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+F_PipettingSteps();
+// }} ""
 // {{ 2 "AutoExitBlock" ""
 WELL_FORMAT::_ExitLibrary();
 UNIQUE_MEMBERS::_ExitLibrary();
 TRACEARRAY::_ExitLibrary();
+LOOKUP::_ExitLibrary();
 OPT_ORDER::_ExitLibrary();
 // }} ""
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2025-11-21 08:51$$checksum=15a28337$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-01-08 17:49$$checksum=1ca30490$$length=083$$
