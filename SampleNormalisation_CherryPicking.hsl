@@ -9,8 +9,9 @@
  namespace _Method { #include "opt_order.hs_" } 
  namespace _Method { #include "HSLUtilLib2.hsl" } 
  namespace _Method { #include "HSLMthLib.hsl" } 
-#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
  namespace _Method { #include "HSLDevLib.hsl" } 
+#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
+ namespace _Method { #include "Load Instructions (All)\\load_instructionsv2\\load_instructionsv2.hs_" } 
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 global device ML_STAR ("SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
 variable strWorklistFilePath;
@@ -66,6 +67,7 @@ UNIQUE_MEMBERS::_InitLibrary();
 TRACEARRAY::_InitLibrary();
 LOOKUP::_InitLibrary();
 OPT_ORDER::_InitLibrary();
+LOAD_INSTRUCTIONSV2::_InitLibrary();
 ::RegisterAbortHandler( "OnAbort");
 // }} ""
 // {{ 1 1 0 "a3ce99cc_4b71_490d_ae38779cdefd1a85" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -92,10 +94,13 @@ B_Arrays();
 // {{{ 7 1 0 "3c52ec61_330f_4cd5_a8a4de80f7ea5533" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 C_LabwareGeneration();
 // }} ""
-// {{{ 8 1 0 "74b10bcb_135d_4dca_b750579df7f04e9b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 8 1 0 "c381ae65_066a_49e7_876265a8cb623e6e" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+D_LoadInstructions();
+// }} ""
+// {{{ 9 1 0 "74b10bcb_135d_4dca_b750579df7f04e9b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 E_WorklistCrunching();
 // }} ""
-// {{{ 9 1 0 "008a3c52_149a_45fb_aa73ff252692a04b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+// {{{ 10 1 0 "008a3c52_149a_45fb_aa73ff252692a04b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 F_PipettingSteps();
 // }} ""
 // {{ 2 "AutoExitBlock" ""
@@ -104,8 +109,9 @@ UNIQUE_MEMBERS::_ExitLibrary();
 TRACEARRAY::_ExitLibrary();
 LOOKUP::_ExitLibrary();
 OPT_ORDER::_ExitLibrary();
+LOAD_INSTRUCTIONSV2::_ExitLibrary();
 // }} ""
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-01-08 17:49$$checksum=1ca30490$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-01-09 10:57$$checksum=a9a1db74$$length=083$$
