@@ -12,6 +12,9 @@ function OnAbort(  ) void {
 // }} ""
 // {{ 5 "OnAbort" "InitLocals"
 // }} ""
+// {{{ 568 1 0 "dfab9f61_8d2a_44ed_a88bf9b2fb0b596b" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+SLACKMESSENGER_V2::SendUpdate(ML_STAR, Translate("abort"));
+// }} ""
 // {{{ 5 "OnAbort" "End"
 }
 // }} ""
@@ -62,7 +65,6 @@ private variable strLC_50;
 private variable loopCounter2;
 private variable arrLC[];
 private variable arrLC_Prev[];
-private variable intNumberOfLoops;
 private variable fltNumberOfLoops;
 private variable loopCounter1;
 private variable loopCounter3;
@@ -1885,4 +1887,4 @@ MECC::TraceComment(Translate("###################################\n     BARCODE 
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=ch33$$valid=0$$time=2026-01-16 10:41$$checksum=612c22c6$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-01-16 11:01$$checksum=f0195c09$$length=083$$
