@@ -1,0 +1,6 @@
+Source Label,Source Position,Destination Label,Destination Position,Sample Volume,Diluent Volume
+Src_001,A1,Dest_001,A1,24,0
+Src_001,B1,Dest_001,B1,24,0
+Src_001,C1,Dest_001,C1,24,0
+Src_001,D1,Dest_001,D1,24,0
+Src_001,E1,Dest_001,E1,24,0
