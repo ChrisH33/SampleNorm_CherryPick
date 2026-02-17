@@ -10,11 +10,11 @@
  namespace _Method { #include "HSLUtilLib2.hsl" } 
  namespace _Method { #include "HSLMthLib.hsl" } 
  namespace _Method { #include "HSLDevLib.hsl" } 
-#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
  namespace _Method { #include "Load Instructions (All)\\load_instructions\\load_instructions.hs_" } 
  namespace _Method { #include "CheckCarrierPresence (All)\\CheckCarrierPresence.hs_" } 
  namespace _Method { #include "WSI\\SlackMessenger\\SlackMessenger_V2.hs_" } 
  namespace _Method { #include "HSLTipCountingLib.hsl" } 
+#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 global device ML_STAR ("SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
 variable intTipSize_1000;
@@ -24,7 +24,6 @@ variable intTipSize_50;
 variable intTipSize_10;
 variable rtn;
 dialog customDialog133A3A0C6D1F42e78C8BBF8951D9E504;
-dialog customDialogDF1CCED551AA41e786D868D69D659940;
 variable _rtn;
 variable strWorklistFilePath;
 variable intNumberOfSourceBarcodes;
@@ -259,4 +258,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-02-16 09:34$$checksum=a5b45d42$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-02-17 10:27$$checksum=f707e398$$length=083$$
