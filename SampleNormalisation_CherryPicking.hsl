@@ -15,6 +15,7 @@
  namespace _Method { #include "WSI\\SlackMessenger\\SlackMessenger_V2.hs_" } 
  namespace _Method { #include "HSLTipCountingLib.hsl" } 
 #include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
+ namespace _Method { #include "HSLFilLib.hsl" } 
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 global device ML_STAR ("SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
 variable intTipSize_1000;
@@ -295,4 +296,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-03-03 11:57$$checksum=6f3f54c6$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-03-03 15:11$$checksum=4acff5f1$$length=083$$
