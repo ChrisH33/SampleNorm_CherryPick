@@ -55,6 +55,8 @@ variable strLC_10;
 variable strLC_1000;
 variable strLC_300;
 variable strLC_50;
+variable intNumberOfDiluentLoops;
+variable blnDiluentTransfer;
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
  namespace _Method { #include "HSLMETEDLib.hs_" } 
@@ -296,4 +298,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-03-04 10:23$$checksum=c997b34f$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-03-04 11:58$$checksum=0dcc7f95$$length=083$$
