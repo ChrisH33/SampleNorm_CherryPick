@@ -96,7 +96,7 @@ CHECKCARRIERPRESENCE::_InitLibrary();
 SLACKMESSENGER_V2::_InitLibrary();
 ::RegisterAbortHandler( "OnAbort");
 // }} ""
-// {{ 1 1 0 "116c587c_7cfe_4a14_b394a810e148d51d" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 1 1 0 "0c0b455e_7cc6_4882_b3b186ee3d26fa5f" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
 // {{ 2 1 0 "14baf2ab_c8b7_4304_87a6427dc104bb53" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
@@ -298,4 +298,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-03-09 16:52$$checksum=8f515705$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-03-13 14:13$$checksum=e07aca29$$length=083$$
