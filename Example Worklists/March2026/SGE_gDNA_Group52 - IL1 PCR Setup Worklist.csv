@@ -1,0 +1,190 @@
+Source Label,Source Position,Destination Label,Destination Position,Sample Volume,Diluent Volume
+Group52NEW,C5,Destination,A1,4.00,0.00
+Group52NEW,C5,Destination,B1,4.00,0.00
+Group52NEW,C5,Destination,C1,4.00,0.00
+Group52NEW,C5,Destination,D1,4.00,0.00
+Group52NEW,C5,Destination,E1,4.00,0.00
+Group52NEW,C5,Destination,F1,4.00,0.00
+Group52NEW,C5,Destination,G1,4.00,0.00
+Group52NEW,C5,Destination,H1,4.00,0.00
+Group52NEW,C5,Destination,A2,4.00,0.00
+Group52NEW,G3,Destination,B2,4.00,0.00
+Group52NEW,G3,Destination,C2,4.00,0.00
+Group52NEW,G3,Destination,D2,4.00,0.00
+Group52NEW,G3,Destination,E2,4.00,0.00
+Group52NEW,G3,Destination,F2,4.00,0.00
+Group52NEW,G3,Destination,G2,4.00,0.00
+Group52NEW,G3,Destination,H2,4.00,0.00
+Group52NEW,G3,Destination,A3,4.00,0.00
+Group52NEW,G3,Destination,B3,4.00,0.00
+Group52NEW,E4,Destination,C3,4.00,0.00
+Group52NEW,E4,Destination,D3,4.00,0.00
+Group52NEW,E4,Destination,E3,4.00,0.00
+Group52NEW,E4,Destination,F3,4.00,0.00
+Group52NEW,E4,Destination,G3,4.00,0.00
+Group52NEW,E4,Destination,H3,4.00,0.00
+Group52NEW,E4,Destination,A4,4.00,0.00
+Group52NEW,E4,Destination,B4,4.00,0.00
+Group52NEW,E4,Destination,C4,4.00,0.00
+Group52NEW,A3,Destination,D4,4.00,0.00
+Group52NEW,A3,Destination,E4,4.00,0.00
+Group52NEW,A3,Destination,F4,4.00,0.00
+Group52NEW,A3,Destination,G4,4.00,0.00
+Group52NEW,A3,Destination,H4,4.00,0.00
+Group52NEW,A3,Destination,A5,4.00,0.00
+Group52NEW,A3,Destination,B5,4.00,0.00
+Group52NEW,A3,Destination,C5,4.00,0.00
+Group52NEW,A3,Destination,D5,4.00,0.00
+Group52NEW,A6,Destination,F6,4.00,0.00
+Group52NEW,A6,Destination,G6,4.00,0.00
+Group52NEW,A6,Destination,H6,4.00,0.00
+Group52NEW,A6,Destination,A7,4.00,0.00
+Group52NEW,A6,Destination,B7,4.00,0.00
+Group52NEW,A6,Destination,C7,4.00,0.00
+Group52NEW,A6,Destination,D7,4.00,0.00
+Group52NEW,A6,Destination,E7,4.00,0.00
+Group52NEW,A6,Destination,F7,4.00,0.00
+Group52NEW,G6,Destination,G7,4.00,0.00
+Group52NEW,G6,Destination,H7,4.00,0.00
+Group52NEW,G6,Destination,A8,4.00,0.00
+Group52NEW,G6,Destination,B8,4.00,0.00
+Group52NEW,G6,Destination,C8,4.00,0.00
+Group52NEW,G6,Destination,D8,4.00,0.00
+Group52NEW,G6,Destination,E8,4.00,0.00
+Group52NEW,G6,Destination,F8,4.00,0.00
+Group52NEW,G6,Destination,G8,4.00,0.00
+Group52NEW,E1,Destination,H8,4.00,0.00
+Group52NEW,E1,Destination,A9,4.00,0.00
+Group52NEW,E1,Destination,B9,4.00,0.00
+Group52NEW,E1,Destination,C9,4.00,0.00
+Group52NEW,E1,Destination,D9,4.00,0.00
+Group52NEW,E1,Destination,E9,4.00,0.00
+Group52NEW,E1,Destination,F9,4.00,0.00
+Group52NEW,E1,Destination,G9,4.00,0.00
+Group52NEW,E1,Destination,H9,4.00,0.00
+Group52NEW,D5,Destination,A1,4.00,0.00
+Group52NEW,D5,Destination,B1,4.00,0.00
+Group52NEW,D5,Destination,C1,4.00,0.00
+Group52NEW,D5,Destination,D1,4.00,0.00
+Group52NEW,D5,Destination,E1,4.00,0.00
+Group52NEW,D5,Destination,F1,4.00,0.00
+Group52NEW,D5,Destination,G1,4.00,0.00
+Group52NEW,D5,Destination,H1,4.00,0.00
+Group52NEW,D5,Destination,A2,4.00,0.00
+Group52NEW,H3,Destination,B2,4.00,0.00
+Group52NEW,H3,Destination,C2,4.00,0.00
+Group52NEW,H3,Destination,D2,4.00,0.00
+Group52NEW,H3,Destination,E2,4.00,0.00
+Group52NEW,H3,Destination,F2,4.00,0.00
+Group52NEW,H3,Destination,G2,4.00,0.00
+Group52NEW,H3,Destination,H2,4.00,0.00
+Group52NEW,H3,Destination,A3,4.00,0.00
+Group52NEW,H3,Destination,B3,4.00,0.00
+Group52NEW,F4,Destination,C3,4.00,0.00
+Group52NEW,F4,Destination,D3,4.00,0.00
+Group52NEW,F4,Destination,E3,4.00,0.00
+Group52NEW,F4,Destination,F3,4.00,0.00
+Group52NEW,F4,Destination,G3,4.00,0.00
+Group52NEW,F4,Destination,H3,4.00,0.00
+Group52NEW,F4,Destination,A4,4.00,0.00
+Group52NEW,F4,Destination,B4,4.00,0.00
+Group52NEW,F4,Destination,C4,4.00,0.00
+Group52NEW,B3,Destination,D4,4.00,0.00
+Group52NEW,B3,Destination,E4,4.00,0.00
+Group52NEW,B3,Destination,F4,4.00,0.00
+Group52NEW,B3,Destination,G4,4.00,0.00
+Group52NEW,B3,Destination,H4,4.00,0.00
+Group52NEW,B3,Destination,A5,4.00,0.00
+Group52NEW,B3,Destination,B5,4.00,0.00
+Group52NEW,B3,Destination,C5,4.00,0.00
+Group52NEW,B3,Destination,D5,4.00,0.00
+Group52NEW,B6,Destination,F6,4.00,0.00
+Group52NEW,B6,Destination,G6,4.00,0.00
+Group52NEW,B6,Destination,H6,4.00,0.00
+Group52NEW,B6,Destination,A7,4.00,0.00
+Group52NEW,B6,Destination,B7,4.00,0.00
+Group52NEW,B6,Destination,C7,4.00,0.00
+Group52NEW,B6,Destination,D7,4.00,0.00
+Group52NEW,B6,Destination,E7,4.00,0.00
+Group52NEW,B6,Destination,F7,4.00,0.00
+Group52NEW,H6,Destination,G7,4.00,0.00
+Group52NEW,H6,Destination,H7,4.00,0.00
+Group52NEW,H6,Destination,A8,4.00,0.00
+Group52NEW,H6,Destination,B8,4.00,0.00
+Group52NEW,H6,Destination,C8,4.00,0.00
+Group52NEW,H6,Destination,D8,4.00,0.00
+Group52NEW,H6,Destination,E8,4.00,0.00
+Group52NEW,H6,Destination,F8,4.00,0.00
+Group52NEW,H6,Destination,G8,4.00,0.00
+Group52NEW,F1,Destination,H8,4.00,0.00
+Group52NEW,F1,Destination,A9,4.00,0.00
+Group52NEW,F1,Destination,B9,4.00,0.00
+Group52NEW,F1,Destination,C9,4.00,0.00
+Group52NEW,F1,Destination,D9,4.00,0.00
+Group52NEW,F1,Destination,E9,4.00,0.00
+Group52NEW,F1,Destination,F9,4.00,0.00
+Group52NEW,F1,Destination,G9,4.00,0.00
+Group52NEW,F1,Destination,H9,4.00,0.00
+IL0 DNA,A1,Destination,A1,3.00,7.00
+IL0 DNA,B1,Destination,B1,3.00,7.00
+IL0 DNA,C1,Destination,C1,3.00,7.00
+IL0 DNA,D1,Destination,D1,3.00,7.00
+IL0 DNA,E1,Destination,E1,3.00,7.00
+IL0 DNA,F1,Destination,F1,3.00,7.00
+IL0 DNA,G1,Destination,G1,3.00,7.00
+IL0 DNA,H1,Destination,H1,3.00,7.00
+IL0 DNA,A2,Destination,A2,3.00,7.00
+IL0 DNA,B2,Destination,B2,3.00,7.00
+IL0 DNA,C2,Destination,C2,3.00,7.00
+IL0 DNA,D2,Destination,D2,3.00,7.00
+IL0 DNA,E2,Destination,E2,3.00,7.00
+IL0 DNA,F2,Destination,F2,3.00,7.00
+IL0 DNA,G2,Destination,G2,3.00,7.00
+IL0 DNA,H2,Destination,H2,3.00,7.00
+IL0 DNA,A3,Destination,A3,3.00,7.00
+IL0 DNA,B3,Destination,B3,3.00,7.00
+IL0 DNA,C3,Destination,C3,3.00,7.00
+IL0 DNA,D3,Destination,D3,3.00,7.00
+IL0 DNA,E3,Destination,E3,3.00,7.00
+IL0 DNA,F3,Destination,F3,3.00,7.00
+IL0 DNA,G3,Destination,G3,3.00,7.00
+IL0 DNA,H3,Destination,H3,3.00,7.00
+IL0 DNA,A4,Destination,A4,3.00,7.00
+IL0 DNA,B4,Destination,B4,3.00,7.00
+IL0 DNA,C4,Destination,C4,3.00,7.00
+IL0 DNA,D4,Destination,D4,3.00,7.00
+IL0 DNA,E4,Destination,E4,3.00,7.00
+IL0 DNA,F4,Destination,F4,3.00,7.00
+IL0 DNA,G4,Destination,G4,3.00,7.00
+IL0 DNA,H4,Destination,H4,3.00,7.00
+IL0 DNA,A5,Destination,A5,3.00,7.00
+IL0 DNA,B5,Destination,B5,3.00,7.00
+IL0 DNA,C5,Destination,C5,3.00,7.00
+IL0 DNA,D5,Destination,D5,3.00,7.00
+IL0 DNA,F6,Destination,F6,3.00,7.00
+IL0 DNA,G6,Destination,G6,3.00,7.00
+IL0 DNA,H6,Destination,H6,3.00,7.00
+IL0 DNA,A7,Destination,A7,3.00,7.00
+IL0 DNA,B7,Destination,B7,3.00,7.00
+IL0 DNA,C7,Destination,C7,3.00,7.00
+IL0 DNA,D7,Destination,D7,3.00,7.00
+IL0 DNA,E7,Destination,E7,3.00,7.00
+IL0 DNA,F7,Destination,F7,3.00,7.00
+IL0 DNA,G7,Destination,G7,3.00,7.00
+IL0 DNA,H7,Destination,H7,3.00,7.00
+IL0 DNA,A8,Destination,A8,3.00,7.00
+IL0 DNA,B8,Destination,B8,3.00,7.00
+IL0 DNA,C8,Destination,C8,3.00,7.00
+IL0 DNA,D8,Destination,D8,3.00,7.00
+IL0 DNA,E8,Destination,E8,3.00,7.00
+IL0 DNA,F8,Destination,F8,3.00,7.00
+IL0 DNA,G8,Destination,G8,3.00,7.00
+IL0 DNA,H8,Destination,H8,3.00,7.00
+IL0 DNA,A9,Destination,A9,3.00,7.00
+IL0 DNA,B9,Destination,B9,3.00,7.00
+IL0 DNA,C9,Destination,C9,3.00,7.00
+IL0 DNA,D9,Destination,D9,3.00,7.00
+IL0 DNA,E9,Destination,E9,3.00,7.00
+IL0 DNA,F9,Destination,F9,3.00,7.00
+IL0 DNA,G9,Destination,G9,3.00,7.00
+IL0 DNA,H9,Destination,H9,3.00,7.00
