@@ -111,8 +111,8 @@ SLACKMESSENGER_V2::_InitLibrary();
 // {{ 3 1 0 "14566f44_0f24_47fc_b75b7a0f36ef3ca3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 intTraceLevel = TRACE_LEVEL_RELEASE;
 // }} ""
-// {{ 4 1 0 "7c874182_3fbb_4c88_bcf3ebcb58a6bc59" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-_blnSaveTips = 1;
+// {{ 4 1 0 "adc744f7_0309_43ba_84c627f106ee22d8" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+_blnSaveTips = 0;
 // }} ""
 // {{ 5 1 0 "13124518_5738_4573_9c8426532b6b6e9a" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
@@ -309,4 +309,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-03-17 09:08$$checksum=b21c7a43$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-03-18 09:44$$checksum=39c13983$$length=083$$
