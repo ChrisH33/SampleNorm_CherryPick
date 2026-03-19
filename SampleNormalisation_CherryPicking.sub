@@ -441,8 +441,8 @@ strCP_300 = strCP_300 + Translate("0");
 // {{ 460 1 0 "284b12cc_f6cd_4f19_98a1a69845e108f4" "{B31F3544-5D80-11d4-A5EB-0050DA737D89}"
 strCP_Eject = strCP_Eject + Translate("0");
 // }} ""
-// {{ 461 1 0 "05b9e641_bb29_4884_919fbe7ef57a40eb" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
-arrAspMix_Volumes.AddAsLast(intTipSize_10);
+// {{ 461 1 0 "2d35ba5d_71c8_409f_91a00bc5d28129e3" "{F17B7626-27CB-47f1-8477-8C4158339A6D}"
+arrAspMix_Volumes.AddAsLast(0);
 // }} ""
 // {{ 462 1 0 "823f3033_27a7_4aa7_8fa393de37ff8eab" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
@@ -2330,4 +2330,4 @@ else
 }
 // }} ""
 /* {{ 2 "SubmethodInsertLine" "" */ // }} ""
-// $$author=ch33$$valid=0$$time=2026-03-18 09:44$$checksum=aec54355$$length=083$$
+// $$author=Napoleon$$valid=0$$time=2026-03-19 11:41$$checksum=042d4280$$length=087$$
