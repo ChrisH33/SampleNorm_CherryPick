@@ -63,6 +63,7 @@ variable intTipsNeeded_1000;
 variable intTipsNeeded_300;
 variable intTipsNeeded_50;
 variable _blnSaveTips;
+variable arrMixVolumes[];
 /* {{ 2 "VariableInsertLine" "" */ // }} ""
 // {{ 2 "TemplateIncludeBlock" ""
  namespace _Method { #include "HSLMETEDLib.hs_" } 
@@ -174,8 +175,8 @@ strTipCounter_1000 = Translate("TipCounter_1000uLFiltered");
 // {{ 22 1 0 "8e9d8d8e_afce_4cda_9c59271970c5771c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 strLC_10 = Translate("LowVolumeFilter_96COREHead_Water_DispenseSurface_Empty");
 // }} ""
-// {{ 23 1 0 "493dd168_370c_48e3_9a0b25b2b2d402d5" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-strLC_50 = Translate("10X_50F_RSB_JetEmpty");
+// {{ 23 1 0 "1a9dd7a9_720e_4dea_a6cb41fcabe23fdf" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+strLC_50 = Translate("Tip_50ulFilter_Aqueous_DispenseSurface_Empty_WSI");
 // }} ""
 // {{ 24 1 0 "d53d7e4c_2047_4627_a02f41d20fd86d0c" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 strLC_300 = Translate("StandardVolumeFilter_96COREHead_Water_DispenseSurface_Empty");
@@ -309,4 +310,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=Napoleon$$valid=0$$time=2026-03-19 11:41$$checksum=bf4a8d55$$length=087$$
+// $$author=ch33$$valid=0$$time=2026-04-08 11:37$$checksum=8d9badca$$length=083$$
