@@ -47,10 +47,11 @@ See the `Example Worklists/` folder for reference files covering a range of use 
 |Tip|Liquid Class|
 |---|---|
 |10 µL filtered|`LowVolumeFilter_96COREHead_Water_DispenseSurface_Empty`|
-|50 µL filtered|`10X_50F_RSB_JetEmpty`|
+|50 µL filtered|`Tip_50ulFilter_Aqueous_DispenseSurface_Empty_WSI`|
 |300 µL filtered|`StandardVolumeFilter_96COREHead_Water_DispenseSurface_Empty`|
 |1000 µL filtered|`HighVolumeFilter_Water_DispenseJet_Empty`|
 
+If new tip types are available / unavailable, please update "intTipSize_XXXX" to reflect the change.
 ## Requirements
 
 - Hamilton ML STAR liquid handling system
