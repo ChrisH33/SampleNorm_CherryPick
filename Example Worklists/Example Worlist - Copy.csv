@@ -1,0 +1,64 @@
+Source Label,Source Position,Destination Label,Destination Position,Sample Volume,Diluent Volume
+Group51_PCR,A1,IL0 PCR Mix (Abgene#1127),A1,24,0
+Group51_PCR,B1,IL0 PCR Mix (Abgene#1127),B1,24,0
+Group51_PCR,C1,IL0 PCR Mix (Abgene#1127),C1,24,0
+Group51_PCR,D1,IL0 PCR Mix (Abgene#1127),D1,24,0
+Group51_PCR,E1,IL0 PCR Mix (Abgene#1127),E1,24,0
+Group51_PCR,F1,IL0 PCR Mix (Abgene#1127),F1,24,0
+Group51_PCR,G1,IL0 PCR Mix (Abgene#1127),G1,24,0
+Group51_PCR,H1,IL0 PCR Mix (Abgene#1127),H1,24,0
+Group51_PCR_02,A2,IL0 PCR Mix (Abgene#1127),A2,24,0
+Group51_PCR_02,B2,IL0 PCR Mix (Abgene#1127),B2,24,0
+Group51_PCR_02,C2,IL0 PCR Mix (Abgene#1127),C2,24,0
+Group51_PCR_02,D2,IL0 PCR Mix (Abgene#1127),D2,24,0
+Group51_PCR_02,E2,IL0 PCR Mix (Abgene#1127),E2,24,0
+Group51_PCR_02,F2,IL0 PCR Mix (Abgene#1127),F2,24,0
+Group51_PCR_02,G2,IL0 PCR Mix (Abgene#1127),G2,24,0
+Group51_PCR_02,H2,IL0 PCR Mix (Abgene#1127),H2,24,0
+Group51_PCR,A3,IL0 PCR Mix (Abgene#1127),A3,24,0
+Group51_PCR,B3,IL0 PCR Mix (Abgene#1127),B3,24,0
+Group51_PCR,C3,IL0 PCR Mix (Abgene#1127),C3,24,0
+Group51_PCR,D3,IL0 PCR Mix (Abgene#1127),D3,24,0
+Group51_PCR,E3,IL0 PCR Mix (Abgene#1127),E3,24,0
+Group51_PCR,F3,IL0 PCR Mix (Abgene#1127),F3,24,0
+Group51_PCR,G3,IL0 PCR Mix (Abgene#1127),G3,24,0
+Group51_PCR,H3,IL0 PCR Mix (Abgene#1127),H3,24,0
+Group51_PCR_02,A4,IL0 PCR Mix (Abgene#1127),A4,24,0
+Group51_PCR_02,B4,IL0 PCR Mix (Abgene#1127),B4,24,0
+Group51_PCR_02,C4,IL0 PCR Mix (Abgene#1127),C4,24,0
+Group51_PCR_02,D4,IL0 PCR Mix (Abgene#1127),D4,24,0
+Group51_PCR_02,E4,IL0 PCR Mix (Abgene#1127),E4,24,0
+Group51_PCR_02,F4,IL0 PCR Mix (Abgene#1127),F4,24,0
+Group51_PCR_02,G4,IL0 PCR Mix (Abgene#1127),G4,24,0
+Group51_PCR_02,H4,IL0 PCR Mix (Abgene#1127),H4,24,0
+gDNA Plate,A5,IL0 PCR Mix (Abgene#1127),A5,24,0
+gDNA Plate,B5,IL0 PCR Mix (Abgene#1127),B5,24,0
+gDNA Plate,C5,IL0 PCR Mix (Abgene#1127),C5,24,0
+gDNA Plate,D5,IL0 PCR Mix (Abgene#1127),D5,24,0
+gDNA Plate,E5,IL0 PCR Mix (Abgene#1127),E5,24,0
+gDNA Plate,F5,IL0 PCR Mix (Abgene#1127),F5,24,0
+gDNA Plate,G5,IL0 PCR Mix (Abgene#1127),G5,24,0
+gDNA Plate,H5,IL0 PCR Mix (Abgene#1127),H5,24,0
+gDNA Plate 2,A6,IL0 PCR Mix (Abgene#1127),A6,24,0
+gDNA Plate 2,B6,IL0 PCR Mix (Abgene#1127),B6,24,0
+gDNA Plate 2,C6,IL0 PCR Mix (Abgene#1127),C6,24,0
+gDNA Plate 2,D6,IL0 PCR Mix (Abgene#1127),D6,24,0
+gDNA Plate 2,E6,IL0 PCR Mix (Abgene#1127),E6,24,0
+gDNA Plate 2,F6,IL0 PCR Mix (Abgene#1127),F6,24,0
+gDNA Plate 2,G6,IL0 PCR Mix (Abgene#1127),G6,24,0
+gDNA Plate 2,H6,IL0 PCR Mix (Abgene#1127),H6,24,0
+Group51_3,A7,IL0 PCR Mix (Abgene#1127),A7,24,0
+Group51_3,B7,IL0 PCR Mix (Abgene#1127),B7,24,0
+Group51_3,C7,IL0 PCR Mix (Abgene#1127),C7,24,0
+Group51_3,D7,IL0 PCR Mix (Abgene#1127),D7,24,0
+Group51_3,E7,IL0 PCR Mix (Abgene#1127),E7,24,0
+Group51_3,F7,IL0 PCR Mix (Abgene#1127),F7,24,0
+Group51_3,G7,IL0 PCR Mix (Abgene#1127),G7,24,0
+Group51_3,H7,IL0 PCR Mix (Abgene#1127),H7,24,0
+Group51_PCR_02,A8,IL0 PCR Mix (Abgene#1127),A8,24,0
+Group51_PCR_02,B8,IL0 PCR Mix (Abgene#1127),B8,24,0
+Group51_PCR_02,C8,IL0 PCR Mix (Abgene#1127),C8,24,0
+Group51_PCR_02,D8,IL0 PCR Mix (Abgene#1127),D8,24,0
+Group51_PCR_02,E8,IL0 PCR Mix (Abgene#1127),E8,24,0
+Group51_PCR_02,F8,IL0 PCR Mix (Abgene#1127),F8,24,0
+Group51_PCR_02,G8,IL0 PCR Mix (Abgene#1127),G8,24,0

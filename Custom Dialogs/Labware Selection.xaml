@@ -1,15 +1,184 @@
-<Window Title="Select Protocol" ResizeMode="NoResize" Background="#FFF2F4F6" Width="611" Height="242" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:hhcdf="clr-namespace:Hamilton.HxCustomDialog.Framework;assembly=Hamilton.HxCustomDialogCore" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
+<Window Title="Labware Selection" ResizeMode="NoResize" Background="{x:Null}" Width="1330" Height="976" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:hhcdf="clr-namespace:Hamilton.HxCustomDialog.Framework;assembly=Hamilton.HxCustomDialogCore" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
   <Window.Resources>
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox1" VariableName="blnMagnet_Dest1" x:Key="checkBox1.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox1" VariableName="_blnVisible_Dest1" x:Key="checkBox1.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox10" VariableName="blnMagnet_Src5" x:Key="checkBox10.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox10" VariableName="_blnVisible_Src5" x:Key="checkBox10.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox2" VariableName="blnMagnet_Dest2" x:Key="checkBox2.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox2" VariableName="_blnVisible_Dest2" x:Key="checkBox2.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox3" VariableName="blnMagnet_Dest3" x:Key="checkBox3.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox3" VariableName="_blnVisible_Dest3" x:Key="checkBox3.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox4" VariableName="blnMagnet_Dest4" x:Key="checkBox4.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox4" VariableName="_blnVisible_Dest4" x:Key="checkBox4.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox5" VariableName="blnMagnet_Dest5" x:Key="checkBox5.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox5" VariableName="_blnVisible_Dest5" x:Key="checkBox5.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox6" VariableName="blnMagnet_Src1" x:Key="checkBox6.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox6" VariableName="_blnVisible_Src1" x:Key="checkBox6.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox7" VariableName="blnMagnet_Src2" x:Key="checkBox7.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox7" VariableName="_blnVisible_Src2" x:Key="checkBox7.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox8" VariableName="blnMagnet_Src3" x:Key="checkBox8.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox8" VariableName="_blnVisible_Src3" x:Key="checkBox8.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="IsChecked" ElementName="checkBox9" VariableName="blnMagnet_Src4" x:Key="checkBox9.IsChecked" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="checkBox9" VariableName="_blnVisible_Src4" x:Key="checkBox9.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Dest1" VariableName="_blnVisible_Dest1" x:Key="comboBox_Dest1.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Dest1" VariableName="_blnVisible_Dest1" x:Key="comboBox_Dest1.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Dest1" VariableName="arrPossibleLabware" x:Key="comboBox_Dest1.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Dest1" VariableName="intLabwarePos_Dest1" x:Key="comboBox_Dest1.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Dest1.SelectionChanged" x:Key="comboBox_Dest1.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Dest1" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Dest2" VariableName="_blnVisible_Dest2" x:Key="comboBox_Dest2.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Dest2" VariableName="_blnVisible_Dest2" x:Key="comboBox_Dest2.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Dest2" VariableName="arrPossibleLabware" x:Key="comboBox_Dest2.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Dest2" VariableName="intLabwarePos_Dest2" x:Key="comboBox_Dest2.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Dest2.SelectionChanged" x:Key="comboBox_Dest2.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Dest2" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Dest3" VariableName="_blnVisible_Dest3" x:Key="comboBox_Dest3.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Dest3" VariableName="_blnVisible_Dest3" x:Key="comboBox_Dest3.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Dest3" VariableName="arrPossibleLabware" x:Key="comboBox_Dest3.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Dest3" VariableName="intLabwarePos_Dest3" x:Key="comboBox_Dest3.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Dest3.SelectionChanged" x:Key="comboBox_Dest3.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Dest3" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Dest4" VariableName="_blnVisible_Dest4" x:Key="comboBox_Dest4.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Dest4" VariableName="_blnVisible_Dest4" x:Key="comboBox_Dest4.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Dest4" VariableName="arrPossibleLabware" x:Key="comboBox_Dest4.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Dest4" VariableName="intLabwarePos_Dest4" x:Key="comboBox_Dest4.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Dest4.SelectionChanged" x:Key="comboBox_Dest4.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Dest4" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Dest5" VariableName="_blnVisible_Dest5" x:Key="comboBox_Dest5.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Dest5" VariableName="_blnVisible_Dest5" x:Key="comboBox_Dest5.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Dest5" VariableName="arrPossibleLabware" x:Key="comboBox_Dest5.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Dest5" VariableName="intLabwarePos_Dest5" x:Key="comboBox_Dest5.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Dest5.SelectionChanged" x:Key="comboBox_Dest5.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Dest5" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Src1" VariableName="_blnVisible_Src1" x:Key="comboBox_Src1.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Src1" VariableName="_blnVisible_Src1" x:Key="comboBox_Src1.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Src1" VariableName="arrPossibleLabware" x:Key="comboBox_Src1.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Src1" VariableName="intLabwarePos_Src1" x:Key="comboBox_Src1.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Src1.SelectionChanged" x:Key="comboBox_Src1.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Src1" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Src2" VariableName="_blnVisible_Src2" x:Key="comboBox_Src2.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Src2" VariableName="_blnVisible_Src2" x:Key="comboBox_Src2.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Src2" VariableName="arrPossibleLabware" x:Key="comboBox_Src2.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Src2" VariableName="intLabwarePos_Src2" x:Key="comboBox_Src2.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Src2.SelectionChanged" x:Key="comboBox_Src2.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Src2" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Src3" VariableName="_blnVisible_Src3" x:Key="comboBox_Src3.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Src3" VariableName="_blnVisible_Src3" x:Key="comboBox_Src3.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Src3" VariableName="arrPossibleLabware" x:Key="comboBox_Src3.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Src3" VariableName="intLabwarePos_Src3" x:Key="comboBox_Src3.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Src3.SelectionChanged" x:Key="comboBox_Src3.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Src3" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Src4" VariableName="_blnVisible_Src4" x:Key="comboBox_Src4.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Src4" VariableName="_blnVisible_Src4" x:Key="comboBox_Src4.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Src4" VariableName="arrPossibleLabware" x:Key="comboBox_Src4.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Src4" VariableName="intLabwarePos_Src4" x:Key="comboBox_Src4.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Src4.SelectionChanged" x:Key="comboBox_Src4.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Src4" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsEnabled" ElementName="comboBox_Src5" VariableName="_blnVisible_Src5" x:Key="comboBox_Src5.IsEnabled" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="comboBox_Src5" VariableName="_blnVisible_Src5" x:Key="comboBox_Src5.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="ItemsSource" ElementName="comboBox_Src5" VariableName="arrPossibleLabware" x:Key="comboBox_Src5.ItemsSource" />
+    <hhcdf:HxVariableBinding BindingMode="InOut" PropertyName="SelectedIndex" ElementName="comboBox_Src5" VariableName="intLabwarePos_Src5" x:Key="comboBox_Src5.SelectedIndex" />
+    <hhcdf:HxEventTrigger EventPath="comboBox_Src5.SelectionChanged" x:Key="comboBox_Src5.SelectionChanged">
+      <hhcdf:HxPropertySetter PropertyName="Source" ElementName="image_Src5" ValueType="Value" NewValue="icon_question" />
+      <hhcdf:HxPropertySetter PropertyName="IsEnabled" ElementName="btnCustomDialogOK" ValueType="Value">
+        <hhcdf:HxPropertySetter.NewValue>
+          <s:Boolean>False</s:Boolean>
+        </hhcdf:HxPropertySetter.NewValue>
+      </hhcdf:HxPropertySetter>
+    </hhcdf:HxEventTrigger>
     <hhcdf:HxSound SoundFile="{x:Null}" x:Key="HxSoundResourceKey" />
     <hhcdf:HxTheme Value="Default" x:Key="HxThemeResourceKey" />
-    <hhcdf:HxVariableBinding BindingMode="Out" PropertyName="Path" ElementName="path1" VariableName="_strWorklistFilePath" x:Key="path1.Path" />
-    <hhcdf:HxVariableBinding BindingMode="Out" PropertyName="ReturnValue" ElementName="" VariableName="retValueDialog" x:Key="ReturnValue" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Dest1" VariableName="_blnVisible_Dest1" x:Key="image_Dest1.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Dest1" VariableName="strLabware_Dest1" x:Key="image_Dest1.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Dest2" VariableName="_blnVisible_Dest2" x:Key="image_Dest2.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Dest2" VariableName="strLabware_Dest2" x:Key="image_Dest2.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Dest3" VariableName="_blnVisible_Dest3" x:Key="image_Dest3.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Dest3" VariableName="strLabware_Dest3" x:Key="image_Dest3.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Dest4" VariableName="_blnVisible_Dest4" x:Key="image_Dest4.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Dest4" VariableName="strLabware_Dest4" x:Key="image_Dest4.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Dest5" VariableName="_blnVisible_Dest5" x:Key="image_Dest5.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Dest5" VariableName="strLabware_Dest5" x:Key="image_Dest5.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Src1" VariableName="_blnVisible_Src1" x:Key="image_Src1.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Src1" VariableName="strLabware_Src1" x:Key="image_Src1.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Src2" VariableName="_blnVisible_Src2" x:Key="image_Src2.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Src2" VariableName="strLabware_Src2" x:Key="image_Src2.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Src3" VariableName="_blnVisible_Src3" x:Key="image_Src3.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Src3" VariableName="strLabware_Src3" x:Key="image_Src3.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Src4" VariableName="_blnVisible_Src4" x:Key="image_Src4.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Src4" VariableName="strLabware_Src4" x:Key="image_Src4.Source" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="IsVisible" ElementName="image_Src5" VariableName="_blnVisible_Src5" x:Key="image_Src5.IsVisible" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Source" ElementName="image_Src5" VariableName="strLabware_Src5" x:Key="image_Src5.Source" />
+    <hhcdf:HxVariableBinding BindingMode="Out" PropertyName="ReturnValue" ElementName="" VariableName="rtnValue2" x:Key="ReturnValue" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock1" VariableName="_blnLabwareID_Src1" x:Key="textBlock1.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock10" VariableName="_blnLabwareID_Dest5" x:Key="textBlock10.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock2" VariableName="_blnLabwareID_Src2" x:Key="textBlock2.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock3" VariableName="_blnLabwareID_Src3" x:Key="textBlock3.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock4" VariableName="_blnLabwareID_Src4" x:Key="textBlock4.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock5" VariableName="_blnLabwareID_Src5" x:Key="textBlock5.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock6" VariableName="_blnLabwareID_Dest1" x:Key="textBlock6.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock7" VariableName="_blnLabwareID_Dest2" x:Key="textBlock7.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock8" VariableName="_blnLabwareID_Dest3" x:Key="textBlock8.Text" />
+    <hhcdf:HxVariableBinding BindingMode="In" PropertyName="Text" ElementName="textBlock9" VariableName="_blnLabwareID_Dest4" x:Key="textBlock9.Text" />
   </Window.Resources>
   <Grid Background="#FFF2F4F6">
     <Grid.RowDefinitions>
-      <RowDefinition Height="70" />
+      <RowDefinition Height="80" />
       <RowDefinition Height="*" />
-      <RowDefinition Height="100" />
+      <RowDefinition Height="80" />
     </Grid.RowDefinitions>
     <Grid.Resources>
       <ControlTemplate TargetType="TextBox" x:Key="ComboBoxTextBox">
@@ -213,7 +382,7 @@
                   </Setter>
                   <Setter Property="Shape.Fill" TargetName="CheckMarkBg">
                     <Setter.Value>
-                      <SolidColorBrush>#FFDBE2E9</SolidColorBrush>
+                      <SolidColorBrush>#2E3B87FF</SolidColorBrush>
                     </Setter.Value>
                   </Setter>
                   <Setter Property="FrameworkElement.Cursor">
@@ -1384,26 +1553,105 @@
         </Setter>
       </Style>
     </Grid.Resources>
-    <Grid Background="#FF002F5D" Grid.Row="0">
+    <Grid Background="#FF232642" Grid.Row="0">
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="63" />
+        <ColumnDefinition Width="180" />
       </Grid.ColumnDefinitions>
-      <hhcdf:HxImageCtrl Name="imgHeader" Width="208" Height="55" Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="1" Grid.Column="0">
+      <hhcdf:HxTextBlockCtrl Text="Sample Normalisation" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="30" Foreground="#FFFFFFFF" TextWrapping="Wrap" Name="textHeader" Width="400" Height="40" Margin="10,8,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="1" />
+      <hhcdf:HxTextBlockCtrl Text="Labware Selection" FontFamily="Arial" FontStyle="Normal" FontSize="21" Foreground="#FFFFFFFF" TextWrapping="Wrap" Name="textSubHeader" Width="300" Height="30" Margin="32,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Opacity="1" />
+      <hhcdf:HxImageCtrl Name="imgWSILogo" Width="162.5891" Height="55.9" Margin="0,0,10,0" HorizontalAlignment="Right" VerticalAlignment="Center" Opacity="1" Grid.Column="1">
         <hhcdf:HxImageCtrl.Source>
-          <BitmapImage BaseUri="{x:Null}" UriSource="Test\HL001.jpg" CacheOption="OnLoad" />
-        </hhcdf:HxImageCtrl.Source>
-      </hhcdf:HxImageCtrl>
-      <hhcdf:HxImageCtrl Name="imgIcon" Width="43" Height="43" Margin="10,10,10,10" HorizontalAlignment="Right" VerticalAlignment="Center" Opacity="1" Grid.Column="1">
-        <hhcdf:HxImageCtrl.Source>
-          <BitmapImage BaseUri="{x:Null}" UriSource="Test\HL002.jpg" CacheOption="OnLoad" />
+          <BitmapImage BaseUri="{x:Null}" UriSource="Labware Selection\WSI_White.png" CacheOption="OnLoad" />
         </hhcdf:HxImageCtrl.Source>
       </hhcdf:HxImageCtrl>
       <hhcdf:HxCanvasCtrl>
-        <hhcdf:HxTextBlockCtrl Text="Sample Dilution" FontSize="17" Foreground="#FFFFFFFF" TextWrapping="Wrap" Name="textBlock1" Width="855" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="7" Canvas.Top="37" />
-        <hhcdf:HxPathBrowseCtrl IsReadOnly="True" FontSize="14" Name="path1" Width="379" Height="29" Opacity="1" Canvas.Left="126" Canvas.Top="91" />
-        <hhcdf:HxTextBlockCtrl Text="Worklist File :" FontSize="16" TextWrapping="Wrap" Name="textBlock2" Width="120" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="14" Canvas.Top="91" />
-        <hhcdf:HxCheckBoxCtrl IsChecked="True" Name="checkBox1" Width="98" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="56" Canvas.Top="126">checkBox</hhcdf:HxCheckBoxCtrl>
+        <hhcdf:HxGroupBoxCtrl BorderBrush="#FF232642" Background="#FFB2C9D3" FontFamily="Arial" FontSize="21" FontStyle="Normal" FontWeight="Bold" Name="groupBox1" Width="512" Height="204" Opacity="1" Canvas.Left="21" Canvas.Top="721">
+          <hhcdf:HxGroupBoxCtrl.Header>
+            <TextBlock Text="Approved Magnet" />
+          </hhcdf:HxGroupBoxCtrl.Header>
+        </hhcdf:HxGroupBoxCtrl>
+        <hhcdf:HxGroupBoxCtrl BorderBrush="#FF232642" Background="#FFB2C9D3" FontFamily="Arial" FontSize="21" FontStyle="Normal" FontWeight="Bold" Name="groupBox_Dest4" Width="1275" Height="280" Opacity="1" Canvas.Left="21" Canvas.Top="413">
+          <hhcdf:HxGroupBoxCtrl.Header>
+            <TextBlock Text="Destination Labware" />
+          </hhcdf:HxGroupBoxCtrl.Header>
+        </hhcdf:HxGroupBoxCtrl>
+        <hhcdf:HxGroupBoxCtrl BorderBrush="#FF232642" Background="#FFB2C9D3" FontFamily="Arial" FontSize="21" FontStyle="Normal" FontWeight="Bold" Name="groupBox_Reagent" Width="1275" Height="280" Opacity="1" Canvas.Left="25" Canvas.Top="105">
+          <hhcdf:HxGroupBoxCtrl.Header>
+            <TextBlock Text="Source Labware" />
+          </hhcdf:HxGroupBoxCtrl.Header>
+        </hhcdf:HxGroupBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Dest1" Width="200" Height="29" Opacity="1" Canvas.Left="62.5" Canvas.Top="650">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Dest2" Width="200" Height="29" Opacity="1" Canvas.Left="312.5" Canvas.Top="650">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Dest3" Width="200" Height="29" Opacity="1" Canvas.Left="562.5" Canvas.Top="650">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Dest4" Width="200" Height="29" Opacity="1" Canvas.Left="812.5" Canvas.Top="650">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Dest5" Width="200" Height="29" Opacity="1" Canvas.Left="1062.5" Canvas.Top="650">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Src1" Width="200" Height="29" Opacity="1" Canvas.Left="62.5" Canvas.Top="345">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Src2" Width="200" Height="29" Opacity="1" Canvas.Left="312.5" Canvas.Top="345">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Src3" Width="200" Height="29" Opacity="1" Canvas.Left="562.5" Canvas.Top="345">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Src4" Width="200" Height="29" Opacity="1" Canvas.Left="812.5" Canvas.Top="345">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxComboBoxCtrl Text="temp" IsReadOnly="True" Background="#FF232642" FontFamily="Arial" FontSize="14" Name="comboBox_Src5" Width="200" Height="29" Opacity="1" IsEnabled="True" Canvas.Left="1062.5" Canvas.Top="345">
+          <ComboBoxItem IsSelected="True">temp</ComboBoxItem>
+        </hhcdf:HxComboBoxCtrl>
+        <hhcdf:HxImageCtrl Stretch="Fill" Name="image_Src1" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="50" Canvas.Top="160">
+          <hhcdf:HxImageCtrl.Source>
+            <BitmapImage BaseUri="{x:Null}" UriSource="Labware Selection\Kingfisher MTP - 97002540.jpg" CacheOption="OnLoad" />
+          </hhcdf:HxImageCtrl.Source>
+        </hhcdf:HxImageCtrl>
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Src2" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="300" Canvas.Top="160" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Src3" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="550" Canvas.Top="160" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Src4" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="800" Canvas.Top="160" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Src5" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="1050" Canvas.Top="160" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Dest1" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="50" Canvas.Top="465" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Dest2" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="300" Canvas.Top="465" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Dest3" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="550" Canvas.Top="465" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Dest4" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="800" Canvas.Top="465" />
+        <hhcdf:HxImageCtrl Source="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_question.png" Stretch="Fill" Name="image_Dest5" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="1050" Canvas.Top="465" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #01:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock1" Width="205" Height="20" Margin="3,3,3,3" Opacity="1" Canvas.Left="50" Canvas.Top="315" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #02:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock2" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="300" Canvas.Top="315" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #03:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock3" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="550" Canvas.Top="315" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #04:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock4" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="800" Canvas.Top="315" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #05:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock5" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="1050" Canvas.Top="315" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #06:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock6" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="50" Canvas.Top="620" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #07:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock7" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="300" Canvas.Top="620" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #08:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock8" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="550" Canvas.Top="620" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #09:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock9" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="798" Canvas.Top="620" />
+        <hhcdf:HxTextBlockCtrl Text="Temp #10:" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Name="textBlock10" Width="205" Height="22" Margin="3,3,3,3" Opacity="1" Canvas.Left="1057" Canvas.Top="620" />
+        <hhcdf:HxImageCtrl Stretch="Fill" Name="image1" Width="225" Height="150" Opacity="1" Effect="{x:Null}" Canvas.Left="42" Canvas.Top="770">
+          <hhcdf:HxImageCtrl.Source>
+            <BitmapImage BaseUri="{x:Null}" UriSource="pack://application:,,,/Hamilton.HxCustomDialogCore;component/Resources/Images/icon_none.png" CacheOption="OnLoad" />
+          </hhcdf:HxImageCtrl.Source>
+        </hhcdf:HxImageCtrl>
+        <hhcdf:HxTextBlockCtrl Text="Alpaqua 96S Super - A001322" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="16" TextAlignment="Center" TextWrapping="Wrap" Name="textBlock11" Width="197" Height="57" Margin="3,3,3,3" Opacity="1" Canvas.Left="301" Canvas.Top="756" />
+        <hhcdf:HxTextBlockCtrl Text="Please note this is the only approved magnet 'type' for this process.&#xA;If a magnet is being used, tick the top-right box" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="15" TextAlignment="Left" TextWrapping="Wrap" Name="textBlock12" Width="211" Height="106" Margin="3,3,3,3" Opacity="1" Canvas.Left="301" Canvas.Top="805" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox1" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="245" Canvas.Top="462" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox2" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="495" Canvas.Top="462" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox3" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="745" Canvas.Top="462" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox4" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="995" Canvas.Top="462" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox5" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="1245" Canvas.Top="462" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox6" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="245" Canvas.Top="154" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox7" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="495" Canvas.Top="154" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox8" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="745" Canvas.Top="154" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox9" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="995" Canvas.Top="154" />
+        <hhcdf:HxCheckBoxCtrl Background="#FF232642" FontSize="27" Name="checkBox10" Width="78" Height="29" Margin="3,3,3,3" Opacity="1" Canvas.Left="1245" Canvas.Top="154" />
       </hhcdf:HxCanvasCtrl>
     </Grid>
     <Grid Grid.Row="1">
@@ -1411,8 +1659,18 @@
     </Grid>
     <Grid Grid.Row="2">
       <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
-        <hhcdf:HxButtonCtrl ClosesDialog="True" ReturnValue="2" IsCancel="True" Background="#FFFF0000" FontSize="14" Name="btnCustomDialogCancel" Width="106" Height="36" Margin="0,0,30,5" Opacity="1">CANCEL</hhcdf:HxButtonCtrl>
-        <hhcdf:HxButtonCtrl ClosesDialog="True" ReturnValue="1" IsDefault="True" Background="#FF008000" FontSize="14" Name="btnCustomDialogOK" Width="106" Height="36" Margin="0,0,30,5" Opacity="1">CONTINUE</hhcdf:HxButtonCtrl>
+        <hhcdf:HxButtonCtrl ClosesDialog="True" ReturnValue="2" IsCancel="True" Background="#FF232642" FontFamily="Arial" FontSize="16" Name="btnCustomDialogCancel" Width="106" Height="37.5" Margin="0,0,25,0" Opacity="1">
+          <hhcdf:HxButtonCtrl.Effect>
+            <DropShadowEffect ShadowDepth="3" Color="#FF000000" Opacity="0.4" BlurRadius="6" />
+          </hhcdf:HxButtonCtrl.Effect>End Method</hhcdf:HxButtonCtrl>
+        <hhcdf:HxButtonCtrl ClosesDialog="True" ReturnValue="4" ValidateOnClose="True" Background="#FF232642" FontFamily="Arial" FontSize="18" FontStyle="Normal" FontWeight="Bold" Name="btnCustomDialogRefresh" Width="106" Height="37.5" Margin="0,0,25,0" Opacity="1" IsEnabled="True">
+          <hhcdf:HxButtonCtrl.Effect>
+            <DropShadowEffect ShadowDepth="3" Color="#FF000000" Opacity="0.4" BlurRadius="6" />
+          </hhcdf:HxButtonCtrl.Effect>Refresh</hhcdf:HxButtonCtrl>
+        <hhcdf:HxButtonCtrl ClosesDialog="True" ReturnValue="1" ValidateOnClose="True" IsDefault="True" Background="#FF232642" FontFamily="Arial" FontSize="18" FontStyle="Normal" FontWeight="Bold" Name="btnCustomDialogOK" Width="106" Height="37.5" Margin="0,0,25,0" Opacity="1" IsEnabled="True">
+          <hhcdf:HxButtonCtrl.Effect>
+            <DropShadowEffect ShadowDepth="3" Color="#FF000000" Opacity="0.4" BlurRadius="6" />
+          </hhcdf:HxButtonCtrl.Effect>Continue</hhcdf:HxButtonCtrl>
       </StackPanel>
       <hhcdf:HxCanvasCtrl />
     </Grid>
