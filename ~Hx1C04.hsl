@@ -16,7 +16,7 @@
  namespace _Method { #include "HSLTipCountingLib.hsl" } 
  namespace _Method { #include "HSLFilLib.hsl" } 
  namespace _Method { #include "VirtualLabware_V2.hsl" } 
-#include "SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.res"
+#include "~Re19E0.res"
 /* {{ 2 "LibraryInsertLine" "" */ // }} ""
 global device ML_STAR ("SampleNorm_CherryPick\\SampleNormalisation_CherryPicking.lay", "ML_STAR", hslTrue);
 variable intTipSize_1000;
@@ -114,7 +114,7 @@ SLACKMESSENGER_V2::_InitLibrary();
 // {{ 2 1 0 "14baf2ab_c8b7_4304_87a6427dc104bb53" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 3 1 0 "e4fd161b_dd68_40ef_b9cc450e3d8c4525" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 3 1 0 "14566f44_0f24_47fc_b75b7a0f36ef3ca3" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 intTraceLevel = TRACE_LEVEL_RELEASE;
 // }} ""
 // {{ 4 1 0 "9bda195b_76ea_4ac3_90eb5c9df1ea4917" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
@@ -283,8 +283,8 @@ if (intTipSize_1000 == 1000)
 // {{ 55 1 0 "a7a29054_529d_4518_b79e6f246fe0d167" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
 strTipCounter_1000 = Translate("TipCounter_1000uLFiltered");
 // }} ""
-// {{ 56 1 0 "aa283d9c_dde6_497c_abe11185ecf7bd31" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
-strLC_1000 = Translate("HighVolumeFilter_96COREHead1000ul_Water_DispenseSurface_Empty");
+// {{ 56 1 0 "0fb78234_2a4d_4f9a_914dd418592a31bb" "{B31F3543-5D80-11d4-A5EB-0050DA737D89}"
+strLC_1000 = Translate("HighVolumeFilter_Water_DispenseJet_Empty");
 // }} ""
 // {{ 57 1 0 "34abebf0_c662_43ca_9c92db09e42ab136" "{586C3429-F931-405f-9938-928E22C90BFA}"
 
@@ -325,8 +325,8 @@ A_UserInput();
 // {{{ 68 1 0 "635d0fb0_2aa1_4637_b9ae93095077408c" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 C_LoadInstructions();
 // }} ""
-// {{ 69 1 0 "b716d862_efd9_4909_a6ea6dcccf4cd13d" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
-customDialog23F342ADF214464796FE7745C2D49077.InitCustomDialog( "b716d862_efd9_4909_a6ea6dcccf4cd13d" );
+// {{ 69 1 0 "7904cc73_6589_481c_928280de3833ea2e" "{998A7CCC-4374-484D-A6ED-E8A4F0EB71BA}"
+customDialog23F342ADF214464796FE7745C2D49077.InitCustomDialog( "7904cc73_6589_481c_928280de3833ea2e" );
 customDialog23F342ADF214464796FE7745C2D49077.ShowCustomDialog();
 _rtn = customDialog23F342ADF214464796FE7745C2D49077.GetCustomDialogProperty( "ReturnValue" );
 // }} ""
@@ -378,4 +378,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-06-22 10:04$$checksum=6f8f402d$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-06-18 15:55$$checksum=3ebc44b1$$length=083$$
