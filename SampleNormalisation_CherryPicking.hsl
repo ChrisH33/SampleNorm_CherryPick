@@ -333,8 +333,8 @@ customDialog23F342ADF214464796FE7745C2D49077.InitCustomDialog( "705ffc64_6824_48
 customDialog23F342ADF214464796FE7745C2D49077.ShowCustomDialog();
 rtnValue = customDialog23F342ADF214464796FE7745C2D49077.GetCustomDialogProperty( "ReturnValue" );
 // }} ""
-// {{{ 71 1 0 "bdc5abc3_6429_4b33_979fb0ddede25b41" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
-_UserDialogErrorHandling(rtnValue);
+// {{{ 71 1 0 "3a7a6e9c_0c58_4cca_b74e7efad16fd0f1" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
+_DialogCheck(rtnValue);
 // }} ""
 // {{{ 72 1 0 "0288517a_0d1f_4124_bae15141603c3cca" "{7C4EF7A7-39BE-406a-897F-71F3A35B4093}"
 D_BarcodeScanning();
@@ -368,4 +368,4 @@ SLACKMESSENGER_V2::_ExitLibrary();
 // {{{ 5 "main" "End"
 } }
 // }} ""
-// $$author=ch33$$valid=0$$time=2026-06-22 16:17$$checksum=794da4ac$$length=083$$
+// $$author=ch33$$valid=0$$time=2026-06-24 08:50$$checksum=6ae38503$$length=083$$
